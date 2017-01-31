@@ -15,43 +15,26 @@ import {
 import CodeSharing from './app';
 AppRegistry.registerComponent('CodeSharing', () => CodeSharing);
 
+import styles from  './styles';
+
 export default class test1 extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <CodeSharing name="IOS" />
-        <Text style={styles.welcome}>
+        <CodeSharing name="Ios" style={styles.cs} />
+        <Text style={styles.cs}>
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          To get started, edit index.web.js
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Press Cmd+R to reload
         </Text>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('test1', () => test1);

@@ -15,6 +15,8 @@ import {
 import CodeSharing from './app';
 AppRegistry.registerComponent('CodeSharing', () => CodeSharing);
 
+import styles from  './styles';
+
 export default class test1 extends Component {
   render() {
     return (
@@ -34,24 +36,5 @@ export default class test1 extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('test1', () => test1);
